@@ -15,10 +15,10 @@ struct AppTabView: View {
                 AssetList()
             }
             Tab ("Favourites", systemImage: "star") {
-                    Text ("Favourites")
+                FavouritesView()
             }
             Tab ("Settings", systemImage: "gear") {
-                    Text ("Settings")
+                   SettingsView()
             }
             
             

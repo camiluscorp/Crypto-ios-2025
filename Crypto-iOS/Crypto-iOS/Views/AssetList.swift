@@ -16,7 +16,8 @@ struct AssetList: View {
             List {
                 ForEach(viewModel.assets, id: \.id) { asset in
                     NavigationLink {
-                        AssetDetailView(asset: asset)
+                        //AssetDetailView(asset: asset)
+                        AssetDetailView(viewModel: .init(asset: asset))
                         
                     } label: {
                         AssetView(assetViewState: .init(asset))
